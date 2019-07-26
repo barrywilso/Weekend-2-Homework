@@ -20,4 +20,12 @@ class Room
     @occupants.delete(guest)
   end
 
+  def songs_total
+    return @album.count
+  end
+
+  def add_song(song)
+    @album << song
+  end
+
 end

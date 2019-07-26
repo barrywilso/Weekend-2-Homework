@@ -13,5 +13,7 @@ class TestGuest < MiniTest::Test
     assert_equal("Donald Trump", @guest1.name)
   end
 
+  
+
 
 end

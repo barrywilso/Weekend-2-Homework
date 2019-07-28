@@ -3,6 +3,8 @@ require("minitest/rg")
 require_relative("../guest.rb")
 require_relative("../room.rb")
 
+
+
 class TestGuest < MiniTest::Test
 
   def setup()
@@ -12,8 +14,6 @@ class TestGuest < MiniTest::Test
   def test_get_guest_name()
     assert_equal("Donald Trump", @guest1.name)
   end
-
-  
 
 
 end

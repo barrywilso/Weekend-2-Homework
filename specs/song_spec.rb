@@ -2,7 +2,7 @@ require("minitest/autorun")
 require("minitest/rg")
 require_relative("../song.rb")
 require_relative("../room.rb")
-
+require_relative("../guest.rb")
 
 class TestSong < MiniTest::Test
 
@@ -12,8 +12,7 @@ class TestSong < MiniTest::Test
   end
 
   def test_song_name()
-    assert_equal("Lust for life", @song1.name)
+    assert_equal("Lust for life", @song1.song)
   end
-
 
 end

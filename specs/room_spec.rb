@@ -4,7 +4,7 @@ require_relative("../room.rb")
 require_relative("../guest.rb")
 require_relative("../song.rb")
 
-class TestRoom< MiniTest::Test
+class TestRoom < MiniTest::Test
 
   def setup()
     @room1 = Room.new(101)
@@ -39,13 +39,13 @@ class TestRoom< MiniTest::Test
     assert_equal(2, @room1.guests_total)
   end
 
-  def test_check_songs_in_album()
-    assert_equal(0, @album.songs_total)
+  def test_songs_total()
+    assert_equal(0, @room1.songs_total)
   end
 
   def test_add_song()
     @room1.add_song(@song3)
-    assert_equal(1, @album.songs_total)
+    assert_equal(1, @room1.songs_total)
   end
 
 end
